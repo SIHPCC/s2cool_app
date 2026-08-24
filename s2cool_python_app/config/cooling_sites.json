@@ -1,0 +1,56 @@
+{
+  "sites": [
+    {
+      "site_id": "lahore_dc_01",
+      "name": "Lahore Datacenter 01",
+      "city": "Lahore",
+      "lat": 31.58105200895347,
+      "lon": 74.35993577212835,
+      "surface_tilt": 30.0,
+      "surface_azimuth": 180.0,
+      "design_cooling_load_kw": 20.0,
+      "data_source_system_id": 1,
+      "hall": {
+        "room_length_m": 14.0,
+        "room_width_m": 9,
+        "room_height_m": 3.5,
+        "window_count": 2,
+        "window_area_each_m2": 1.5,
+        "people_count": 3,
+        "sensible_w_per_person": 120,
+        "latent_w_per_person": 60,
+        "lighting_w_per_m2": 7,
+        "non_it_misc_kw": 1.5,
+        "it_load_kw": 14
+      },
+      "internal_load_schedule": {
+        "day_start_hour": 8,
+        "day_end_hour": 20,
+        "it_day_multiplier": 1.0,
+        "it_night_multiplier": 0.78,
+        "people_day_multiplier": 1.0,
+        "people_night_multiplier": 0.12,
+        "lighting_day_multiplier": 1.0,
+        "lighting_night_multiplier": 0.25,
+        "misc_day_multiplier": 1.0,
+        "misc_night_multiplier": 0.85,
+        "weekend_multiplier": 0.92
+      },
+      "physics_initial": {
+        "shgc": 0.35,
+        "r_env_kw_per_k": 7.75,
+        "r_int_kw_per_k": 1.5,
+        "c_air_kj_per_k": 18000
+      },
+      "synthetic_measurement": {
+        "indoor_temp_setpoint_c": 24.0,
+        "supply_temp_c": 17.5,
+        "supply_rh_pct": 90.0,
+        "return_rise_c": 6.5,
+        "airflow_m3_s": 0.70,
+        "measurement_noise_std_kw": 0.05
+      },
+      "status": "active"
+    }
+  ]
+}

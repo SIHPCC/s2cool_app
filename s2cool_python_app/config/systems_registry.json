@@ -1,0 +1,102 @@
+{
+  "systems": [
+    {
+      "system_number": 1,
+      "pvoutput_id": "96020",
+      "pvoutput_sid": "84670",
+      "name": "System 01",
+      "location": "Lahore",
+      "capacity_kw": 3.6,
+      "lat": 31.58105200895347,
+      "lon": 74.35993577212835,
+      "tilt_deg": 30.0,
+      "azimuth_deg": 180.0,
+      "timezone": "Asia/Karachi",
+      "status": "active"
+    },
+    {
+      "system_number": 2,
+      "pvoutput_id": "121122",
+      "pvoutput_sid": "104972",
+      "name": "System 02",
+      "location": "Bhorewala",
+      "capacity_kw": 7.77,
+      "lat": 30.15834976221323,
+      "lon": 72.68261585800425,
+      "tilt_deg": 30.0,
+      "azimuth_deg": 180.0,
+      "timezone": "Asia/Karachi",
+      "status": "active"
+    },
+    {
+      "system_number": 3,
+      "pvoutput_id": "115973",
+      "pvoutput_sid": "101009",
+      "name": "System 03",
+      "location": "Faisalabad",
+      "capacity_kw": 23.1,
+      "lat": 31.49844963577372,
+      "lon": 73.21694022032605,
+      "tilt_deg": 30.0,
+      "azimuth_deg": 180.0,
+      "timezone": "Asia/Karachi",
+      "status": "active"
+    },
+    {
+      "system_number": 4,
+      "pvoutput_id": "129953",
+      "pvoutput_sid": "110818",
+      "name": "System 04",
+      "location": "Lahore",
+      "capacity_kw": 8.625,
+      "lat": 31.485874821899344,
+      "lon": 74.3546450457259,
+      "tilt_deg": 30.0,
+      "azimuth_deg": 180.0,
+      "timezone": "Asia/Karachi",
+      "status": "active"
+    },
+    {
+      "system_number": 5,
+      "pvoutput_id": "77752",
+      "pvoutput_sid": "68935",
+      "name": "System 05",
+      "location": "Karachi",
+      "capacity_kw": 9.9,
+      "lat": 24.82428656933627,
+      "lon": 67.06704280471406,
+      "tilt_deg": 30.0,
+      "azimuth_deg": 180.0,
+      "timezone": "Asia/Karachi",
+      "status": "active"
+    },
+    {
+      "system_number": 7,
+      "pvoutput_id": "96028",
+      "pvoutput_sid": "84677",
+      "name": "System 07",
+      "location": "Lahore",
+      "capacity_kw": 5.88,
+      "lat": 31.48982305873417,
+      "lon": 74.39896026228257,
+      "tilt_deg": 30.0,
+      "azimuth_deg": 180.0,
+      "timezone": "Asia/Karachi",
+      "status": "active"
+    },
+    {
+      "system_number": 8,
+      "pvoutput_id": "65581",
+      "pvoutput_sid": "58294",
+      "name": "System 08",
+      "location": "Lahore",
+      "capacity_kw": 3.3,
+      "lat": 31.5519379823066,
+      "lon": 74.3756485360783,
+      "tilt_deg": 30.0,
+      "azimuth_deg": 180.0,
+      "timezone": "Asia/Karachi",
+      "status": "active"
+    }
+  ]
+}

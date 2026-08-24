@@ -1,0 +1,33 @@
+# Local environments and caches
+pvf_venv/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+s2cool_python_app/catboost_info/
+s2cool_python_app/tests/
+s2cool_python_app/requirements-forecasting-optional.txt
+
+# Generated runtime outputs
+M2_PVnowcasting_module/forecast/
+M2_PVnowcasting_module/preprocessing/
+M3_CoolingLoad_prediction_module/forecast/
+M3_CoolingLoad_prediction_module/preprocessing/
+
+# Local research outputs and large scratch artifacts
+*.joblib
+*.pkl
+*.pickle
+*.ipynb
+pv_forecast_*.csv
+pv_hybrid_*.csv
+pv_*.png
+pv_hybrid_*.png
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

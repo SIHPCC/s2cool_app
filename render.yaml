@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: s2cool-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r s2cool_python_app/requirements.txt gunicorn
+    startCommand: cd s2cool_python_app && gunicorn --bind 0.0.0.0:$PORT app:server
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: RENDER
+        value: "true"

@@ -1,0 +1,34 @@
+{
+  "pv_forecasting": {
+    "horizons_minutes": [5, 15, 30],
+    "feature_columns": [
+      "ghi_pyr",
+      "dni",
+      "dhi",
+      "air_temperature",
+      "relative_humidity",
+      "wind_speed",
+      "hour_sin",
+      "hour_cos"
+    ],
+    "test_size": 0.2,
+    "train_cutoff": "2026-05-01",
+    "test_start": "2026-05-01",
+    "test_end": "2026-05-03",
+    "lstm": {
+      "sequence_length": 12,
+      "epochs": 8,
+      "batch_size": 64
+    }
+  },
+  "cooling_demand": {
+    "horizons_minutes": [10, 20, 30],
+    "train_month": "",
+    "test_days": 2,
+    "backtest_step_days": 1,
+    "steady_state_only": true,
+    "steady_state_threshold_k_per_min": 0.02,
+    "calibration_iterations": 1000,
+    "interval_alpha": 0.1
+  }
+}
