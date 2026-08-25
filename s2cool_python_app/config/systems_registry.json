@@ -71,6 +71,20 @@
       "status": "active"
     },
     {
+      "system_number": 6,
+      "pvoutput_id": "",
+      "pvoutput_sid": "",
+      "name": "System 06",
+      "location": "Lahore",
+      "capacity_kw": 14.4,
+      "lat": 31.446157809469508,
+      "lon": 74.405663443442,
+      "tilt_deg": 30.0,
+      "azimuth_deg": 180.0,
+      "timezone": "Asia/Karachi",
+      "status": "active"
+    },
+    {
       "system_number": 7,
       "pvoutput_id": "96028",
       "pvoutput_sid": "84677",
