@@ -13,6 +13,7 @@ runtime_data = [
 hiddenimports = [
     "dash",
     "plotly",
+    "pvlib",
     "dash.dcc",
     "dash.html",
     "dash.dependencies",
@@ -20,6 +21,7 @@ hiddenimports = [
 ] + (
     collect_submodules("dash")
     + collect_submodules("plotly")
+    + collect_submodules("pvlib")
     + collect_submodules("pages")
     + collect_submodules("services")
     + collect_submodules("components")

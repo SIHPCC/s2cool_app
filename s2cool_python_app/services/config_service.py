@@ -1,14 +1,19 @@
 from __future__ import annotations
 
 import json
+import sys
 from functools import lru_cache
 from pathlib import Path
 
 from models.domain import CoolingSiteRecord, SystemRecord
 
-APP_ROOT = Path(__file__).resolve().parents[1]
-REPO_ROOT = APP_ROOT.parent
-CONFIG_DIR = APP_ROOT / "config"
+if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
+    REPO_ROOT = Path(sys._MEIPASS)
+    APP_ROOT = REPO_ROOT
+else:
+    APP_ROOT = Path(__file__).resolve().parents[1]
+    REPO_ROOT = APP_ROOT.parent
+CONFIG_DIR = REPO_ROOT / "config"
 
 
 @lru_cache(maxsize=1)
