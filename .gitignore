@@ -9,6 +9,10 @@ __pycache__/
 s2cool_python_app/catboost_info/
 s2cool_python_app/tests/
 s2cool_python_app/requirements-forecasting-optional.txt
+build/
+dist/
+*.spec
+!s2cool_app.spec
 
 # Generated runtime outputs
 M2_PVnowcasting_module/forecast/
