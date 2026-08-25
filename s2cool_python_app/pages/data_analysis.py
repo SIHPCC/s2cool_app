@@ -1523,8 +1523,18 @@ def render_trend_analysis_state(
     try:
         result = get_pipeline_result(selected_file, preprocess_config)
         df = result.dataframe.copy()
-    except Exception:
-        df = None
+    except Exception as exc:
+        return (
+            shown,
+            [],
+            [],
+            None,
+            "00:00",
+            None,
+            "23:55",
+            html.P(f"The processed dataset could not be loaded: {exc}", className="preprocessing-export-error"),
+            _build_empty_figure("Processed dataset unavailable."),
+        )
     if df is None or df.empty or "_ts" not in df.columns:
         return shown, [], [], None, "00:00", None, "23:55", html.P("The processed dataset could not be loaded. Review the previous pipeline step for details.", className="section-subtitle"), _build_empty_figure("Processed dataset unavailable.")
 
@@ -2404,7 +2414,7 @@ def generate_analysis_dataset(
     if mode != "analyze" or not selected_file:
         return html.P("Select Analyze Existing System and a dataset first.", className="preprocessing-export-error"), None
     try:
-        result = get_pipeline_result(selected_file, config)
+        result = get_pipeline_result(selected_file, config or _default_preprocess_config())
     except Exception as exc:
         return html.P(f"Dataset generation failed: {exc}", className="preprocessing-export-error"), None
     return (
